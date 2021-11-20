@@ -1,0 +1,48 @@
+img.me{
+    height:300px;
+    width:430px;
+    align-self: center;
+}
+ul{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+h2{
+    text-align: center;
+    font-weight: 10px;
+}
+img.nostril{
+    height:400px;
+    width:430px;
+}
+img.how{
+    height: 400px;
+    width:430px;
+}
+img{
+    height:300px;
+    width:430px;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+p{
+    text-align: center;
+}
+#nostril_breathing{
+    text-align: left;
+}
+.meditate{
+    border-radius: 45%;
+    width:20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    align-items: center;
+}
+button .meditate{
+    color:aqua
+}

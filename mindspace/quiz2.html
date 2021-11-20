@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Mind Space</title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"/>
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="quiz2.css"/>
+        <!-- SmoothScroll -->
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js" integrity="sha512-wDH73bv6rW6O6ev5DGYexNboWMzBoY+1TEAx5Q/sdbqN2MB2cNTG9Ge/qv3c1QNvuiAuETsKJnnHH2UDJGmmAQ==" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ==" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
+    <link href="//db.onlinewebfonts.com/c/0f7a67e55701367f6f5602bf32c3bf5c?family=Yoxall" rel="stylesheet" type="text/css"/>
+    <!--aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
+
+  <body id="body" class="light-mode">
+    <div class="landing-page-bar" id="landingbar">
+      <div class="desktop-page-bar">
+        <div>
+          <img
+            src="./images/logo.png"
+            style="
+              width: 70px;
+              height: 50px;
+              transition: 1s;
+              margin-top: -10px;
+            "
+          />
+        </div>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li class="dropdownmenu">
+            <a>QUIZ</a>
+            <ul>
+              <li><a href="quiz2.html">Mental Health!</a></li>
+              <li><a href="quiz3.html">Know yourself!</a></li>
+            </ul>
+            
+          </li>
+          <li><a href="meditation.html">MySpace</a></li>
+          <li><a href="mylist.html">MyList</a></li>
+          <li><a class="logout" href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <header id="header">
+      <div class="preloader">
+        <img src="./images/pandagif.gif" style="border-radius: 50%;"alt="spinner" />
+      </div>
+
+      <div class="nav-div">
+        <nav id="sideNav">
+          <ul>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="quiz2.html">MENTAL HEALTH QUIZ</a></li>
+            <li><a href="quiz3.html">GET TO KNOW YOURSELF QUIZ</a></li>
+            <li><a href="meditation.html">MEDITATION</a></li>
+            <li><a href="mylist.html">MyList</a></li>
+            <li><a class="logout" href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+
+          </ul>
+          <div class="mode-div">
+            <i class="fas fa-sun"></i>
+            <input type="checkbox" id="switch" onclick="toggleDarkLight()" />
+            <label class="mode" for="switch"></label>
+            <i class="fas fa-moon"></i>
+          </div>
+        </nav>
+        <i class="fas fa-bars" id="menuBtn" onclick="openNav()"></i>
+      </div>
+    </header>
+          <section class="container">
+               <h1>
+                   How well do you know about mental health?
+               </h1>
+                <div id="p9">
+                <h2 ><time>00:00:00</time></h2>
+                </div>
+                <div class="box" id="p2">
+                    <div id="p3"></div>
+                    <hr>
+                    <br>
+                    <div id="p11">
+                    <input type="radio" name="answer" value="1" > <span class="ok" id="p4"></span> <br> 
+                    <input type="radio" name="answer" value="2" > <span class="ok" id="p5"></span> <br> 
+                    <input type="radio" name="answer" value="3" > <span class="ok" id="p6"></span> <br> 
+                    <input type="radio" name="answer" value="4" > <span  class="ok" id="p7"></span>
+                    </div>
+                </div>
+                <div id="p8"></div>               
+                <button  id="p1" type="button" onclick="loadNextQuestion()">Submit </button>
+                <script src="quiz2.js"></script>
+        </section>
+        <section id="footer">
+            <div class="desktop-view-footer">
+              <div class="container footer-row">
+                <hr />
+                <div class="footer-left-col">
+                  <div class="footer-links">
+                    <div class="link-title">
+                      <h4>Our App</h4>
+                    </div>
+                    <div class="link-title">
+                      <h4>About Us</h4>
+                    </div>
+                    <div class="link-title">
+                      <h4>Contact</h4>
+                    </div>
+                    <div class="link-title">
+                      <h4>Follow Us</h4>
+                      <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-right-col">
+                  <div class="footer-info">
+                    <div class="footer-logo">
+                      <img src="./images/panda2.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </section>
+   
+
+    
+    <!-- External Script -->
+    <script src="./script.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
